@@ -8,9 +8,9 @@ export default function CourseDetails({route}) {
   return (
     <View style={{flex: 1, backgroundColor: '#fff',paddingVertical:16}}>
       <View style={styles.card}>
-        <View style={{alignItems: 'center', marginVertical: 15,borderBottomWidth:1,marginBottom:16,paddingBottom:10}}>
-          <Text style={{color: '#000000', fontWeight: 'bold', fontSize: 20,textAlign:'center'}}>
-            {data.name} ({data.idSubject})
+        <View style={{ marginVertical: 15,borderBottomWidth:1,marginBottom:16,paddingBottom:10,paddingLeft:15}}>
+          <Text style={{color: '#000000', fontWeight: 'bold', fontSize: 20,}}>
+          {data.subjectName}  ({data.idSubject})
           </Text>
         </View>
         <View style={{marginHorizontal: 16, flexDirection: 'row'}}>
@@ -26,7 +26,7 @@ export default function CourseDetails({route}) {
           />
           <View>
             <Text style={{color: '#282828', fontWeight: 'bold', fontSize: 18,marginBottom:4}}>
-              {data.subjectName}
+            {data.name}
             </Text>
             <Text style={{color: '#1b1b1b', fontWeight: '700',}}>
               Duration: <Text style={{fontWeight:'400'}}>{data.duration}</Text>

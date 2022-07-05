@@ -51,9 +51,8 @@ export default function Courses({navigation}) {
                 source={{uri: item?.imageUrl}}
               />
             <View style={{width:'80%'}}>
-                <Text style={{color:'#000000',fontWeight:'700',fontSize:17}}>{item.name}</Text>
-                <Text style={{color:'#1b1b1b',fontSize:16}}>{item.subjectName}</Text>
-
+                <Text style={{color:'#000000',fontWeight:'700',fontSize:17}}>{item.subjectName}</Text>
+                <Text style={{color:'#1b1b1b',fontSize:16}}>{item.name}</Text>
             </View>
             </View>
           </TouchableOpacity>
